@@ -20,7 +20,7 @@ Below are the operational poses and mechanical configurations executed by the ro
 
 |        🦾 Stand Pose (Normal)        |            🧍 Crouch Pose            |          🚨 Alert (Ready) Pose          |             💤 Sleep / Rest Pose             |
 | :----------------------------------: | :----------------------------------: | :-------------------------------------: | :------------------------------------------: |
-| ![Stand Pose](Pose/Berdiri-Pose.jpg) |  ![Erect Pose](Pose/Tegak-Pose.jpg)  |   ![Alert Pose](Pose/Siaga-Pose.jpg)    |     ![Sleep Pose](Pose/Tiduran-Pose.jpg)     |
+| ![Stand Pose](Pose/Berdiri-Pose.jpg) |  ![Erect Pose](Pose/Crouch-Pose.jpg)  |   ![Alert Pose](Pose/Siaga-Pose.jpg)    |     ![Sleep Pose](Pose/Tiduran-Pose.jpg)     |
 |    **V1 (HIGH)**: Default stance.    | **V1 (LOW)**: Lowered/crouch stance. | **V7 (HIGH)**: Prepared for locomotion. | **V12 (HIGH)**: Low-power state, joints folded. |
 
 |         🙇 Bow / Nudge Pose          |            👈 Lean Left Pose            |            👉 Lean Right Pose             |
