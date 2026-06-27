@@ -6,24 +6,121 @@ The robot is controlled in real-time via the **Blynk IoT** mobile application, e
 
 ---
 
+## 🎥 Full System Demonstration
+
+Below is a comprehensive video demonstration of the 12-DOF Quadruped Robot executing various postures, gait transitions, and active movement routines, managed in real-time using the Blynk IoT mobile dashboard:
+
+<p align="center">
+  <video src="Demo/robot_demonstration.mp4" width="100%" controls></video>
+</p>
+
+---
+
 ## 📸 Pose & Maneuver Showcase
 
-Below are the operational poses and mechanical configurations executed by the robot, displaying its structural integrity and kinematic capabilities:
+Below are the operational poses and mechanical configurations executed by the robot, displaying its structural integrity and kinematic capabilities along with their respective demonstration clips:
 
 | 🦾 Stand Pose (Normal) | 🧍 Erect Stand Pose | 🚨 Alert (Ready) Pose |
 | :---: | :---: | :---: |
 | ![Stand Pose](Pose/Berdiri-Pose.jpg) | ![Erect Pose](Pose/Tegak-Pose.jpg) | ![Alert Pose](Pose/Siaga-Pose.jpg) |
+| <video src="Demo/jongkok_berdiri.mp4" width="220" controls></video> | <video src="Demo/jongkok_berdiri_top.mp4" width="220" controls></video> | <video src="Demo/siaga.mp4" width="220" controls></video> |
 | **V1 (HIGH)**: Default stance. | **Default Setup**: High-extension. | **V7 (HIGH)**: Prepared for locomotion. |
 
 | 💤 Sleep / Rest Pose | 🙇 Bow / Nudge Pose | 👋 Wave Pose |
 | :---: | :---: | :---: |
 | ![Sleep Pose](Pose/Tiduran-Pose.jpg) | ![Bow Pose](Pose/Nungging-Pose.jpg) | ![Wave Pose](Pose/Melambai-Pose.jpg) |
+| <video src="Demo/tiduran.mp4" width="220" controls></video> | <video src="Demo/nungging.mp4" width="220" controls></video> | <video src="Demo/Melambai.mp4" width="220" controls></video> |
 | **V12 (HIGH)**: Low-power state, joints folded. | **V8 (HIGH)**: Low front, high rear. | **V13 (HIGH)**: Front-right leg gesture. |
 
 | 👈 Lean Left Pose | 👉 Lean Right Pose | 🔄 Rotate / Turn Pose |
 | :---: | :---: | :---: |
 | ![Lean Left](Pose/Miring-Kiri-Pose.jpg) | ![Lean Right](Pose/Miring-Kanan-Pose.jpg) | ![Rotate](Pose/Berputar.jpg) |
-| **V9 (HIGH)**: Roll movement left. | **V10 (HIGH)**: Roll movement right. | **V3 / V6 (PUSH)**: Rotational gait. |
+| <video src="Demo/miring_kiri.mp4" width="220" controls></video> | <video src="Demo/miring_kanan.mp4" width="220" controls></video> | <video src="Demo/dance.mp4" width="220" controls></video> |
+| **V9 (HIGH)**: Roll movement left. | **V10 (HIGH)**: Roll movement right. | **V3 / V6 (PUSH)**: Rotational gait & dance. |
+
+---
+
+## 🚶 Locomotion & Dynamic Movement Guide
+
+This section outlines the locomotion patterns and sequential execution phases of the quadruped robot. The robot utilizes a coordinated **Diagonal/Trot Gait** for linear movement and synchronized hip-turning actions for angular rotation.
+
+### 1. Forward Locomotion (Maju)
+The forward gait is executed as a synchronized diagonal gait, where diagonal pairs of legs lift and swing forward together while the other pair supports the body and pushes it backward relative to the chassis, resulting in forward momentum.
+
+* **Demonstration Video**:
+  <p align="center">
+    <video src="Demo/maju.mp4" width="600" controls></video>
+  </p>
+
+* **Gait Phase Progression**:
+  | 1️⃣ Phase 1: RF & LR Lift & Swing | 2️⃣ Phase 2: LF & RR Lift & Swing |
+  | :---: | :---: |
+  | ![Forward Phase 1](Movement/Maju_1.jpg) | ![Forward Phase 2](Movement/Maju_2.jpg) |
+  | Diagonal Right-Front (RF) and Left-Rear (LR) legs swing forward. | Diagonal Left-Front (LF) and Right-Rear (RR) legs swing forward. |
+
+---
+
+### 2. Backward Locomotion (Mundur)
+Similar to forward walking, the backward gait alternates diagonal leg pairs but reverses the direction of the coxa sweep angles to push the chassis backward.
+
+* **Demonstration Video**:
+  <p align="center">
+    <video src="Demo/mundur.mp4" width="600" controls></video>
+  </p>
+
+* **Gait Phase Progression**:
+  | 1️⃣ Phase 1: RF & LR Lift & Sweep Back | 2️⃣ Phase 2: LF & RR Lift & Sweep Back |
+  | :---: | :---: |
+  | ![Backward Phase 1](Movement/mundur_1.jpg) | ![Backward Phase 2](Movement/mundur_2.jpg) |
+  | Diagonal Right-Front (RF) and Left-Rear (LR) legs lift and sweep backward. | Diagonal Left-Front (LF) and Right-Rear (RR) legs lift and sweep backward. |
+
+---
+
+### 3. Left Turn Maneuver (Belok Kiri)
+To turn left, the robot adjusts the yaw angle using its Coxa joints. The diagonal legs lift and sweep outwards/inwards asymmetrically to generate a counter-clockwise torque.
+
+* **Demonstration Video**:
+  <p align="center">
+    <video src="Demo/belok_kiri.mp4" width="600" controls></video>
+  </p>
+
+* **Step Phase Progression**:
+  | 1️⃣ Phase 1: Swing Left Alignment | 2️⃣ Phase 2: Pivot & Ground Sweep |
+  | :---: | :---: |
+  | ![Turn Left Phase 1](Movement/belok_kiri_1.jpg) | ![Turn Left Phase 2](Movement/belok_kiri_2.jpg) |
+  | First diagonal pair lifts and pivots outwards towards the left. | Second diagonal pair lifts, matching orientation to complete the pivot. |
+
+---
+
+### 4. Right Turn Maneuver (Belok Kanan)
+The right turn reverses the pivot dynamics of the left turn, generating clockwise yaw torque.
+
+* **Demonstration Video**:
+  <p align="center">
+    <video src="Demo/belok_kanan.mp4" width="600" controls></video>
+  </p>
+
+* **Step Phase Progression**:
+  | 1️⃣ Phase 1: Swing Right Alignment | 2️⃣ Phase 2: Pivot & Ground Sweep |
+  | :---: | :---: |
+  | ![Turn Right Phase 1](Movement/belok_kanan_1.jpg) | ![Turn Right Phase 2](Movement/belok_kanan_2.jpg) |
+  | First diagonal pair lifts and pivots outwards towards the right. | Second diagonal pair lifts, matching orientation to complete the pivot. |
+
+---
+
+### 5. Coordinated Dance Routine (Dance Mode)
+The dance routine showcases the robot's ability to smoothly shift its center of mass across all axes (Roll and Pitch) sequentially.
+
+* **Demonstration Video**:
+  <p align="center">
+    <video src="Demo/dance.mp4" width="600" controls></video>
+  </p>
+
+* **Chassis Orientation Stages**:
+  | 1️⃣ Step 1: Lateral Roll Shift | 2️⃣ Step 2: Pitch Forward Shift | 3️⃣ Step 3: Pitch Backward Shift |
+  | :---: | :---: | :---: |
+  | ![Dance Stage 1](Movement/Dance_1.jpg) | ![Dance Stage 2](Movement/Dance_2.jpg) | ![Dance Stage 3](Movement/Dance_3.jpg) |
+  | Alternating Roll shifts (Left and Right tilts). | Tilting forward by lowering front limbs. | Tilting backward by lowering rear limbs. |
 
 ---
 
