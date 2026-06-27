@@ -10,7 +10,7 @@ The robot is controlled in real-time via the **Blynk IoT** mobile application, e
 
 Below is a comprehensive video demonstration of the 12-DOF Quadruped Robot executing various postures, gait transitions, and active movement routines, managed in real-time using the Blynk IoT mobile dashboard:
 
-https://github.com/user-attachments/assets/33c1f037-f79a-4495-9738-f3045d3acb1c
+https://github.com/user-attachments/assets/8e604543-ec63-4c53-9115-9bebe995f5a1
 
 ---
 
@@ -18,20 +18,15 @@ https://github.com/user-attachments/assets/33c1f037-f79a-4495-9738-f3045d3acb1c
 
 Below are the operational poses and mechanical configurations executed by the robot, displaying its structural integrity and kinematic capabilities:
 
-|        🦾 Stand Pose (Normal)        |        🧍 Erect Stand Pose         |          🚨 Alert (Ready) Pose          |
-| :----------------------------------: | :--------------------------------: | :-------------------------------------: |
-| ![Stand Pose](Pose/Berdiri-Pose.jpg) | ![Erect Pose](Pose/Tegak-Pose.jpg) |   ![Alert Pose](Pose/Siaga-Pose.jpg)    |
-|    **V1 (HIGH)**: Default stance.    | **Default Setup**: High-extension. | **V7 (HIGH)**: Prepared for locomotion. |
+|        🦾 Stand Pose (Normal)        |            🧍 Crouch Pose            |          🚨 Alert (Ready) Pose          |             💤 Sleep / Rest Pose             |
+| :----------------------------------: | :----------------------------------: | :-------------------------------------: | :------------------------------------------: |
+| ![Stand Pose](Pose/Berdiri-Pose.jpg) |  ![Erect Pose](Pose/Tegak-Pose.jpg)  |   ![Alert Pose](Pose/Siaga-Pose.jpg)    |     ![Sleep Pose](Pose/Tiduran-Pose.jpg)     |
+|    **V1 (HIGH)**: Default stance.    | **V1 (LOW)**: Lowered/crouch stance. | **V7 (HIGH)**: Prepared for locomotion. | **V12 (HIGH)**: Low-power state, joints folded. |
 
-|              💤 Sleep / Rest Pose               |         🙇 Bow / Nudge Pose          |               👋 Wave Pose               |
-| :---------------------------------------------: | :----------------------------------: | :--------------------------------------: |
-|      ![Sleep Pose](Pose/Tiduran-Pose.jpg)       | ![Bow Pose](Pose/Nungging-Pose.jpg)  |   ![Wave Pose](Pose/Melambai-Pose.jpg)   |
-| **V12 (HIGH)**: Low-power state, joints folded. | **V8 (HIGH)**: Low front, high rear. | **V13 (HIGH)**: Front-right leg gesture. |
-
-|            👈 Lean Left Pose            |            👉 Lean Right Pose             |            🔄 Rotate / Turn Pose             |
-| :-------------------------------------: | :---------------------------------------: | :------------------------------------------: |
-| ![Lean Left](Pose/Miring-Kiri-Pose.jpg) | ![Lean Right](Pose/Miring-Kanan-Pose.jpg) |         ![Rotate](Pose/Berputar.jpg)         |
-|   **V9 (HIGH)**: Roll movement left.    |   **V10 (HIGH)**: Roll movement right.    | **V3 / V6 (PUSH)**: Rotational gait & dance. |
+|         🙇 Bow / Nudge Pose          |            👈 Lean Left Pose            |            👉 Lean Right Pose             |
+| :----------------------------------: | :-------------------------------------: | :---------------------------------------: |
+| ![Bow Pose](Pose/Nungging-Pose.jpg)  | ![Lean Left](Pose/Miring-Kiri-Pose.jpg) | ![Lean Right](Pose/Miring-Kanan-Pose.jpg) |
+| **V8 (HIGH)**: Low front, high rear. |   **V9 (HIGH)**: Roll movement left.    |   **V10 (HIGH)**: Roll movement right.    |
 
 <details>
 <summary><b>🎥 Click to view Pose Demonstration Videos</b></summary>
@@ -39,7 +34,7 @@ Below are the operational poses and mechanical configurations executed by the ro
 - **Stand Pose (Normal)**:
   https://github.com/user-attachments/assets/1d478605-c089-45de-a125-60b619f2e742
 
-- **Erect Stand Pose**:
+- **Crouch Pose**:
   https://github.com/user-attachments/assets/4c5a3081-5370-4404-9bbb-77898118aac1
 
 - **Alert (Ready) Pose**:
@@ -51,17 +46,11 @@ Below are the operational poses and mechanical configurations executed by the ro
 - **Bow / Nudge Pose**:
   https://github.com/user-attachments/assets/862aab0b-3d93-4b0e-8ee4-31507dded152
 
-- **Wave Pose**:
-  https://github.com/user-attachments/assets/d73f7db7-2af8-475d-b8e4-4c9a365bb636
-
 - **Lean Left Pose**:
   https://github.com/user-attachments/assets/0bff008e-99b4-4d29-90c5-f23f27e07ff3
 
 - **Lean Right Pose**:
   https://github.com/user-attachments/assets/ac0b15eb-119f-4572-bb21-902510a6424b
-
-- **Rotate / Turn Pose (Dance Mode)**:
-  https://github.com/user-attachments/assets/07be4e34-9c81-46b3-8282-d0e392128d39
 
 </details>
 
@@ -141,13 +130,28 @@ The dance routine showcases the robot's ability to smoothly shift its center of 
 
 - **Demonstration Video**:
 
-https://github.com/user-attachments/assets/8030e06d-8e2b-4a14-a35c-40132f868c27
+https://github.com/user-attachments/assets/07be4e34-9c81-46b3-8282-d0e392128d39
 
 - **Chassis Orientation Stages**:
   | 1️⃣ Step 1: Tilt Left | 2️⃣ Step 2: Tilt Right | 3️⃣ Step 3: Tilt Forward | 4️⃣ Step 4: Tilt Backward |
   | :---: | :---: | :---: | :---: |
   | ![Dance Stage 1](Movement/Dance_1.jpg) | ![Dance Stage 2](Movement/Dance_2.jpg) | ![Dance Stage 3](Movement/Dance_3.jpg) | ![Dance Stage 4](Movement/Dance_4.png) |
   | Shifts laterally to the left (`miringKiri`). | Shifts laterally to the right (`miringKanan`). | Lowers front limbs (`miringDepan`). | Lowers rear limbs (`miringBelakang`). |
+
+---
+
+### 6. Wave Gesture (Melambai)
+
+The wave gesture coordinates the Front-Right (RF) leg to execute a waving motion in the air while the other three legs support the body weight and maintain dynamic balance.
+
+- **Demonstration Video**:
+
+https://github.com/user-attachments/assets/2216210f-3dde-4dad-980f-ef7e99f90a07
+
+- **Gesture Pose**:
+  <p align="center">
+    <img src="Pose/Melambai-Pose.jpg" alt="Wave Gesture Pose" width="300">
+  </p>
 
 ---
 
