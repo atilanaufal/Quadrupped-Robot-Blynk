@@ -6,36 +6,67 @@ The robot is controlled in real-time via the **Blynk IoT** mobile application, e
 
 ---
 
-### 🎥 Full System Demonstration
+## 🎥 Robot Demonstration
 
-Below is a comprehensive video demonstration of the 12-DOF Quadruped Robot executing various postures, gait transitions, and active movement routines, managed in real-time using the Blynk IoT mobile dashboard.
+Below is a comprehensive video demonstration of the 12-DOF Quadruped Robot executing various postures, gait transitions, and active movement routines, managed in real-time using the Blynk IoT mobile dashboard:
 
-***Click the image below to watch the full system demonstration video:***
-
-[![Watch Full System Demonstration](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Pose/Berdiri-Pose.jpg)](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Demo/robot_demonstration.mp4)
+https://github.com/user-attachments/assets/160b379b-c33b-44f2-9617-6cf2e1d9ef62
 
 ---
 
 ## 📸 Pose & Maneuver Showcase
 
-Below are the operational poses and mechanical configurations executed by the robot, displaying its structural integrity and kinematic capabilities. 
-
-***Click on any pose image below to view its corresponding video demonstration:***
+Below are the operational poses and mechanical configurations executed by the robot, displaying its structural integrity and kinematic capabilities:
 
 | 🦾 Stand Pose (Normal) | 🧍 Erect Stand Pose | 🚨 Alert (Ready) Pose |
 | :---: | :---: | :---: |
-| [![Stand Pose](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Pose/Berdiri-Pose.jpg)](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Demo/jongkok_berdiri.mp4) | [![Erect Pose](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Pose/Tegak-Pose.jpg)](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Demo/jongkok_berdiri_top.mp4) | [![Alert Pose](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Pose/Siaga-Pose.jpg)](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Demo/siaga.mp4) |
+| ![Stand Pose](Pose/Berdiri-Pose.jpg) | ![Erect Pose](Pose/Tegak-Pose.jpg) | ![Alert Pose](Pose/Siaga-Pose.jpg) |
 | **V1 (HIGH)**: Default stance. | **Default Setup**: High-extension. | **V7 (HIGH)**: Prepared for locomotion. |
 
 | 💤 Sleep / Rest Pose | 🙇 Bow / Nudge Pose | 👋 Wave Pose |
 | :---: | :---: | :---: |
-| [![Sleep Pose](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Pose/Tiduran-Pose.jpg)](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Demo/tiduran.mp4) | [![Bow Pose](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Pose/Nungging-Pose.jpg)](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Demo/nungging.mp4) | [![Wave Pose](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Pose/Melambai-Pose.jpg)](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Demo/Melambai.mp4) |
+| ![Sleep Pose](Pose/Tiduran-Pose.jpg) | ![Bow Pose](Pose/Nungging-Pose.jpg) | ![Wave Pose](Pose/Melambai-Pose.jpg) |
 | **V12 (HIGH)**: Low-power state, joints folded. | **V8 (HIGH)**: Low front, high rear. | **V13 (HIGH)**: Front-right leg gesture. |
 
 | 👈 Lean Left Pose | 👉 Lean Right Pose | 🔄 Rotate / Turn Pose |
 | :---: | :---: | :---: |
-| [![Lean Left](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Pose/Miring-Kiri-Pose.jpg)](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Demo/miring_kiri.mp4) | [![Lean Right](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Pose/Miring-Kanan-Pose.jpg)](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Demo/miring_kanan.mp4) | [![Rotate](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Pose/Berputar.jpg)](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Demo/dance.mp4) |
+| ![Lean Left](Pose/Miring-Kiri-Pose.jpg) | ![Lean Right](Pose/Miring-Kanan-Pose.jpg) | ![Rotate](Pose/Berputar.jpg) |
 | **V9 (HIGH)**: Roll movement left. | **V10 (HIGH)**: Roll movement right. | **V3 / V6 (PUSH)**: Rotational gait & dance. |
+
+> [!TIP]
+> To view the demonstration videos for these poses as inline players on GitHub, drag and drop the respective video files from the `Demo` folder into the GitHub web editor to upload them as user-attachments, then replace the placeholder links in the section below:
+
+<details>
+<summary><b>🎥 Click to view Pose Demonstration Videos</b></summary>
+
+* **Stand Pose (Normal)**:
+  https://github.com/user-attachments/assets/PLACEHOLDER_JONGKOK_BERDIRI_ID
+
+* **Erect Stand Pose**:
+  https://github.com/user-attachments/assets/PLACEHOLDER_JONGKOK_BERDIRI_TOP_ID
+
+* **Alert (Ready) Pose**:
+  https://github.com/user-attachments/assets/PLACEHOLDER_SIAGA_ID
+
+* **Sleep / Rest Pose**:
+  https://github.com/user-attachments/assets/PLACEHOLDER_TIDURAN_ID
+
+* **Bow / Nudge Pose**:
+  https://github.com/user-attachments/assets/PLACEHOLDER_NUNGGING_ID
+
+* **Wave Pose**:
+  https://github.com/user-attachments/assets/PLACEHOLDER_MELAMBAI_ID
+
+* **Lean Left Pose**:
+  https://github.com/user-attachments/assets/PLACEHOLDER_MIRING_KIRI_ID
+
+* **Lean Right Pose**:
+  https://github.com/user-attachments/assets/PLACEHOLDER_MIRING_KANAN_ID
+
+* **Rotate / Turn Pose (Dance Mode)**:
+  https://github.com/user-attachments/assets/PLACEHOLDER_DANCE_ID
+
+</details>
 
 ---
 
@@ -43,12 +74,15 @@ Below are the operational poses and mechanical configurations executed by the ro
 
 This section outlines the locomotion patterns and sequential execution phases of the quadruped robot. The robot utilizes a coordinated **Diagonal/Trot Gait** for linear movement and synchronized hip-turning actions for angular rotation.
 
+> [!TIP]
+> To view the locomotion demonstration videos as inline players on GitHub, drag and drop the respective video files from the `Demo` folder into the GitHub web editor to upload them as user-attachments, then replace the placeholder links in the sections below.
+
 ### 1. Forward Locomotion (Maju)
 The forward gait is executed as a synchronized diagonal gait, where diagonal pairs of legs lift and swing forward together while the other pair supports the body and pushes it backward relative to the chassis, resulting in forward momentum.
 
-***Click the thumbnail below to watch the forward locomotion video:***
+* **Demonstration Video**:
 
-[![Watch Forward Locomotion](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Movement/Maju_1.jpg)](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Demo/maju.mp4)
+https://github.com/user-attachments/assets/PLACEHOLDER_MAJU_ID
 
 * **Gait Phase Progression**:
   | 1️⃣ Phase 1: RF & LR Lift & Swing | 2️⃣ Phase 2: LF & RR Lift & Swing |
@@ -61,9 +95,9 @@ The forward gait is executed as a synchronized diagonal gait, where diagonal pai
 ### 2. Backward Locomotion (Mundur)
 Similar to forward walking, the backward gait alternates diagonal leg pairs but reverses the direction of the coxa sweep angles to push the chassis backward.
 
-***Click the thumbnail below to watch the backward locomotion video:***
+* **Demonstration Video**:
 
-[![Watch Backward Locomotion](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Movement/mundur_1.jpg)](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Demo/mundur.mp4)
+https://github.com/user-attachments/assets/PLACEHOLDER_MUNDUR_ID
 
 * **Gait Phase Progression**:
   | 1️⃣ Phase 1: RF & LR Lift & Sweep Back | 2️⃣ Phase 2: LF & RR Lift & Sweep Back |
@@ -76,9 +110,9 @@ Similar to forward walking, the backward gait alternates diagonal leg pairs but 
 ### 3. Left Turn Maneuver (Belok Kiri)
 To turn left, the robot adjusts the yaw angle using its Coxa joints. The diagonal legs lift and sweep outwards/inwards asymmetrically to generate a counter-clockwise torque.
 
-***Click the thumbnail below to watch the left turn maneuver video:***
+* **Demonstration Video**:
 
-[![Watch Left Turn Maneuver](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Movement/belok_kiri_1.jpg)](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Demo/belok_kiri.mp4)
+https://github.com/user-attachments/assets/PLACEHOLDER_BELOK_KIRI_ID
 
 * **Step Phase Progression**:
   | 1️⃣ Phase 1: Swing Left Alignment | 2️⃣ Phase 2: Pivot & Ground Sweep |
@@ -91,9 +125,9 @@ To turn left, the robot adjusts the yaw angle using its Coxa joints. The diagona
 ### 4. Right Turn Maneuver (Belok Kanan)
 The right turn reverses the pivot dynamics of the left turn, generating clockwise yaw torque.
 
-***Click the thumbnail below to watch the right turn maneuver video:***
+* **Demonstration Video**:
 
-[![Watch Right Turn Maneuver](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Movement/belok_kanan_1.jpg)](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Demo/belok_kanan.mp4)
+https://github.com/user-attachments/assets/PLACEHOLDER_BELOK_KANAN_ID
 
 * **Step Phase Progression**:
   | 1️⃣ Phase 1: Swing Right Alignment | 2️⃣ Phase 2: Pivot & Ground Sweep |
@@ -106,9 +140,9 @@ The right turn reverses the pivot dynamics of the left turn, generating clockwis
 ### 5. Coordinated Dance Routine (Dance Mode)
 The dance routine showcases the robot's ability to smoothly shift its center of mass across all axes (Roll and Pitch) sequentially.
 
-***Click the thumbnail below to watch the dance routine video:***
+* **Demonstration Video**:
 
-[![Watch Dance Routine](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Movement/Dance_1.jpg)](https://raw.githubusercontent.com/atilanaufal/Quadrupped-Robot-Blynk/main/Demo/dance.mp4)
+https://github.com/user-attachments/assets/PLACEHOLDER_DANCE_ID
 
 * **Chassis Orientation Stages**:
   | 1️⃣ Step 1: Tilt Left | 2️⃣ Step 2: Tilt Right | 3️⃣ Step 3: Tilt Forward | 4️⃣ Step 4: Tilt Backward |
