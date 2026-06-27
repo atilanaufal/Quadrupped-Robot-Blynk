@@ -10,7 +10,7 @@ The robot is controlled in real-time via the **Blynk IoT** mobile application, e
 
 Below is a comprehensive video demonstration of the 12-DOF Quadruped Robot executing various postures, gait transitions, and active movement routines, managed in real-time using the Blynk IoT mobile dashboard:
 
-https://github.com/user-attachments/assets/8e604543-ec63-4c53-9115-9bebe995f5a1
+https://github.com/user-attachments/assets/33c1f037-f79a-4495-9738-f3045d3acb1c
 
 ---
 
@@ -141,7 +141,7 @@ The dance routine showcases the robot's ability to smoothly shift its center of 
 
 - **Demonstration Video**:
 
-https://github.com/user-attachments/assets/07be4e34-9c81-46b3-8282-d0e392128d39
+https://github.com/user-attachments/assets/8030e06d-8e2b-4a14-a35c-40132f868c27
 
 - **Chassis Orientation Stages**:
   | 1️⃣ Step 1: Tilt Left | 2️⃣ Step 2: Tilt Right | 3️⃣ Step 3: Tilt Forward | 4️⃣ Step 4: Tilt Backward |
